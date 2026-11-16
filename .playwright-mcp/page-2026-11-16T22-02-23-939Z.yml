@@ -1,0 +1,31 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - paragraph [ref=f1e3]: this page is for
+    - heading "Devinah" [level=1] [ref=f1e4]
+    - paragraph [ref=f1e5]: the girl who made my heart go quiet and loud at the same time.
+    - link "read on" [ref=f1e6] [cursor=pointer]:
+      - /url: "#letter"
+  - main [ref=f1e7]:
+    - generic [ref=f1e8]:
+      - heading "A little letter" [level=2] [ref=f1e9]
+      - paragraph [ref=f1e10]: Devinah, I don’t always know how to say this out loud, so I built you a place to keep it.
+      - paragraph [ref=f1e11]: You are the first thought that finds me in the morning and the last one that stays at night. I love the way you make ordinary days feel softer, like someone turned the light down to gold.
+      - paragraph [ref=f1e12]: I’m not asking you for anything here. I just wanted you to know, without any pressure, that someone thinks you are beautiful in every way that counts.
+      - paragraph [ref=f1e13]: Always thinking of you.
+    - generic [ref=f1e14]:
+      - heading "Pictures of you" [level=2] [ref=f1e15]
+      - paragraph [ref=f1e16]: I don’t have many pictures of you, so every one of these is precious to me.
+      - generic [ref=f1e17]:
+        - figure "The first one" [ref=f1e18]:
+          - img "Devinah" [ref=f1e19]
+        - figure "Your smile" [ref=f1e21]:
+          - img "Devinah" [ref=f1e22]
+        - figure "A day I’ll remember" [ref=f1e24]:
+          - img "Devinah" [ref=f1e25]
+        - figure "Another moment" [ref=f1e27]:
+          - img "Devinah" [ref=f1e28]
+    - heading "A moment of you" [level=2] [ref=f1e31]
+    - generic [ref=f1e34]:
+      - paragraph [ref=f1e35]: Devinah,you are loved.
+      - paragraph [aria-hidden] [ref=f1e36]: ♥
+  - contentinfo [ref=f1e37]: made with love, for Devinah

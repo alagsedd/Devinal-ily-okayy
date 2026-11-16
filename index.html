@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Devinah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="petals" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header class="hero">
+  <p class="hero-small">this page is for</p>
+  <h1>Devinah</h1>
+  <p class="hero-line">the girl who made my heart go quiet and loud at the same time.</p>
+  <a class="scroll" href="#letter">read on</a>
+</header>
+
+<main>
+
+  <section id="letter" class="letter">
+    <h2>A little letter</h2>
+    <p>Devinah, I don’t always know how to say this out loud, so I built you a place to keep it.</p>
+    <p>You are the first thought that finds me in the morning and the last one that stays at night. I love the way you make ordinary days feel softer, like someone turned the light down to gold.</p>
+    <p>I’m not asking you for anything here. I just wanted you to know, without any pressure, that someone thinks you are beautiful in every way that counts.</p>
+    <p class="sign">Always thinking of you.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Pictures of you</h2>
+    <p class="note">I don’t have many pictures of you, so every one of these is precious to me.</p>
+
+    <div class="frames">
+      <figure class="frame tall">
+        <img src="Devinah/WhatsApp Image 2026-11-16 at 9.37.15 PM.jpeg" alt="Devinah">
+        <figcaption>The first one</figcaption>
+      </figure>
+      <figure class="frame">
+        <img src="Devinah/WhatsApp Image 2026-11-16 at 9.37.15 PM (1).jpeg" alt="Devinah">
+        <figcaption>Your smile</figcaption>
+      </figure>
+      <figure class="frame">
+        <img src="Devinah/WhatsApp Image 2026-11-16 at 9.37.15 PM (2).jpeg" alt="Devinah">
+        <figcaption>A day I’ll remember</figcaption>
+      </figure>
+      <figure class="frame">
+        <img src="Devinah/WhatsApp Image 2026-11-16 at 9.37.17 PM.jpeg" alt="Devinah">
+        <figcaption>Another moment</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="film">
+    <h2>A moment of you</h2>
+    <div class="video-frame">
+      <video controls playsinline poster="Devinah/video-poster.webp">
+        <source src="Devinah/WhatsApp%20Video%202026-11-16%20at%209.37.43%20PM.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="closing">
+    <p class="big">Devinah,<br>you are loved.</p>
+    <p class="heart" aria-hidden="true">♥</p>
+  </section>
+
+</main>
+
+<footer>made with love, for Devinah</footer>
+
+<script>
+document.querySelectorAll(".frame img").forEach((image) => {
+  const showFallback = () => {
+    const caption = image.closest("figure").querySelector("figcaption").textContent;
+    const fallback = document.createElement("div");
+    fallback.className = "empty";
+    fallback.setAttribute("role", "img");
+    fallback.setAttribute("aria-label", `${caption}: photo couldn't be loaded`);
+    fallback.textContent = "This photo couldn't be loaded";
+    image.replaceWith(fallback);
+  };
+
+  image.addEventListener("error", showFallback, { once: true });
+  if (image.complete && !image.naturalWidth) showFallback();
+});
+</script>
+
+</body>
+</html>
